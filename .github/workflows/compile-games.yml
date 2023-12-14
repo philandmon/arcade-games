@@ -25,6 +25,8 @@ jobs:
                   fetch-depth: 0
                   submodules: "recursive"
 
+            - name: Setup upterm session
+              uses: lhotari/action-upterm@v1
             - id: get-game-directory
               run: |
                   cd $GITHUB_WORKSPACE
